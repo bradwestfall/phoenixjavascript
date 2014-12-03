@@ -1,0 +1,53 @@
+.info {
+	border: 1px solid $line-color;
+	border-left: none;
+	border-right: none;
+	padding: 5px 0;
+	color: #FFF;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.event {
+
+	&.preview {
+		border: 1px solid $line-color;
+		padding: 20px;
+		border-radius: 20px;	
+	}
+
+	a.title {
+		@extend h1;
+		font-size: 16pt;
+		display: block;
+	}
+
+	footer {
+		padding-top: 10px;
+		margin-top: 10px;
+		a.rsvp {
+			background-color: $orange;
+			border-color: $orange;
+			color: #FFF;
+		}
+	}
+
+}
+
+nav.event-months {
+
+	a {
+		display: block;
+		padding: 5px 10px;
+	}
+
+}
+
+div.sponsor {
+	margin-bottom: 50px;
+
+	a {
+		display: block;
+		font-size: 16pt;
+	}
+
+}

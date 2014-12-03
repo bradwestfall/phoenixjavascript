@@ -1,0 +1,13 @@
+---
+layout: event
+categories: event
+title: "Intro to Node.js"
+location: "@UAT Room 205"
+map: "http://bit.ly/1tdqYEi"
+time: "6:30-8:30"
+sponsor: "Pizza Provided by TekSystems."
+presenter: "Chris Cowan"
+topic: "NodeJS"
+---
+
+Learn the basics of Node.js by covering the basics, how to deal with nested callbacks, how to create your own modules, and walk through a node.js project.

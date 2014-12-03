@@ -1,0 +1,13 @@
+---
+layout: event
+categories: event
+title: "Dojo 10 is 2"
+location: "@UAT Room 206/207"
+map: "http://bit.ly/1tdqYEi"
+time: "6:30-8:30"
+sponsor: "Pizza Provided by TekSystems."
+presenter: "Dylan Schiemann (Co-creator of Dojo)"
+topic: "Dojo"
+---
+
+The Dojo Toolkit will celebrate 10 years of existence this year. This talk will provide an introduction of the key features of the Dojo Toolkit, and the exciting plans for Dojo 2.0. It will also go into depth about Intern, a Dojo and AMD-based tool for efficiently testing your JavaScript applications, and other Dojo packages.

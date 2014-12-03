@@ -1,0 +1,125 @@
+.primary-content {
+	min-height: 400px;
+	background: url('/images/retina_wood.png');
+	padding: 10px;
+
+	@include respond($desktop-breakpoint) {
+		> div {
+			@include clearfix;
+			margin: 0 auto;
+			width: $default-page-width;
+			padding-top: 100px;
+			padding-bottom: 50px;
+		}
+	}
+}
+
+body.home {
+
+	@include respond($desktop-breakpoint) {
+		&::before {
+			content: '';
+			height: 400px;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: radial-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.76)), url('/images/hero.jpeg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+
+		.page {
+			top: 400px;
+			position: absolute;
+			width: 100%;
+			z-index: 2;
+		}
+
+		.primary-content > div {
+			position: relative; // For the "next event"
+			padding-top: 0;
+		}
+
+		.event.next {
+			color: #bbb;
+			max-width: 600px;
+			position: absolute;
+			top: -300px;
+			right: 0;
+			margin: 0 10px;
+			border: none;
+			background: linear-gradient(rgba(0,0,0,0.5), transparent);
+			
+			a.title {
+				font-size: 28pt;
+			}
+
+			footer a:not(.rsvp) {
+				background-color: #fff;
+			}
+
+			@include respond($desktop-breakpoint) {
+				border-radius: 20px;
+				margin: 0;
+			}
+		}
+		
+	}
+
+}
+
+aside {
+	display: none;
+	float: left;
+	width: 320px;
+	> * + * {
+		margin-top: 10px;
+	}
+
+	nav p {
+		padding-right: 30px;
+	}
+
+	@include respond($desktop-breakpoint) {
+		display: block;
+	}
+}
+
+main {
+	@include respond($desktop-breakpoint) {
+		margin-left: 320px;
+		padding-left: 10px;
+	}
+	> * + * {
+		margin-top: 10px;
+	}
+}
+
+footer.primary {
+	background-color: #fff;
+}
+
+#contact {
+	font-size: 10pt;
+	margin: 20px auto;
+	text-align: center;
+	
+	@include respond($desktop-breakpoint) {
+		font-size: 14pt;
+		width: $default-page-width;
+		overflow: hidden;
+		.organizers {
+			float: left;
+			text-align: left;
+		}
+		.general {
+			text-align: right;
+			float: right;
+			a {
+				display: block
+			}
+		}
+	}
+}

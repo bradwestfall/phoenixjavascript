@@ -1,0 +1,17 @@
+<header class="primary">
+  <div>
+    <a href="/" class="logo"></a>
+
+    <a class="fa fa-bars toggle-menu" href="#nav"></a>
+    <nav id="nav">
+      <div>
+        <a href="/" {% if page.tab == "home" %}class="selected"{% endif %}>Home</a>
+        <a href="/events.html" {% if page.tab == "events" %}class="selected"{% endif %}>Events</a>
+        <a href="http://www.meetup.com/Phoenix-JavaScript">Join</a>
+        <a href="/sponsors.html" {% if page.tab == "sponsors" %}class="selected"{% endif %}>Sponsors</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+  </div>
+</header>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body{% if page.tab == "home" %} class="home"{% endif %}>
+
+    {% include header.html %}
+
+    <div class="page">
+    
+      <div class="primary-content">
+        <div>
+
+          <aside>
+            {% include aside.html %}
+          </aside>
+
+          <main>
+            {{ content }}
+          </main>
+        
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+    
+  </body>
+
+</html>

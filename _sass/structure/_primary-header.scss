@@ -1,0 +1,95 @@
+header.primary {
+	background-color: #fff;
+	position: relative; // for the logo
+	z-index: 1000;
+	> div {
+		min-height: 40px;
+	}
+
+	.toggle-menu {
+		font-size: 20pt;
+		display: block;
+		float: right;
+		margin-top: 4px;
+		margin-right: 15px;
+		cursor: pointer;
+
+		@include respond($desktop-breakpoint) {	
+			display: none;
+		}
+	}
+
+	@include respond($desktop-breakpoint) {	
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		> div {
+			margin: 0 auto;
+			width: $default-page-width;
+		}
+	}
+
+}
+
+#nav {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: #FFF;
+	
+	a {
+		display: block;
+		border-bottom: 1px solid #CCC;
+		padding: 10px 20px;;
+	}
+
+	&:target {
+		display: block;
+	}
+
+	@include respond($desktop-breakpoint) {	
+		display: block;
+		position: static;
+		overflow: hidden;
+		> div {
+			float: right;
+		}
+		a {
+			color: #444;
+			text-transform: uppercase;
+			display: inline-block;
+			border-bottom: 3px solid transparent;
+			&:hover {
+				border-color: #ddd;
+			}
+			&.selected {
+				border-color: $orange;
+			}
+		}
+	}
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	background-image: url('/images/logo.png');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	padding: 5px 5px;
+	width: 200px;
+	top: 0;
+	bottom: 0;
+
+	@include respond($desktop-breakpoint) {
+		background-color: white;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		bottom: -40px;
+		width: 300px;
+		padding: 15px 30px;
+	}
+}
