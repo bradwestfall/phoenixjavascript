@@ -22,6 +22,16 @@ h2 {
 	color: #444;
 }
 
+h3 {
+  @extend h1;
+  font-size: 26pt;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-top: 10px;
+}
+
 p {
 	line-height: 160%;
 }
