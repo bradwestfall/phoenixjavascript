@@ -12,3 +12,5 @@ topic: "Chrome DevTools"
 Come learn from other members about Chrome Dev Tools and it's vast amount of features that are lesser known. This is a show-and-tell so come prepared to talk about your knowledge of DevTools in front of the group, if you wish.
 
 Parking is free in the structure. When you enter the building, go left. We'll be on the first floor.
+
+{% include disqus.html %}
