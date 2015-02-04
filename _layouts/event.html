@@ -4,16 +4,16 @@ tab: events
 ---
 
 <div class="event">
-	
-	<header>
-		<h1>{{ page.title }} by {{ page.presenter }}</h1>
-		<div class="info">
-			<span>{{ page.location }}</span>
-			<span>{{ page.date | date: "%B %d, %Y" }} {{ page.time }}</span>
-			<span>{{ page.sponsor }}</span>
-		</div>
-	</header>
 
-	{{ content }}
-	
+  <header>
+    <h1>{{ page.title }} by {{ page.presenter }}</h1>
+    <div class="info">
+      <span>{{ page.location }}</span>
+      <span>{{ page.date | date: "%B %d, %Y" }} {{ page.time }}</span>
+      <span>{{ page.sponsor }}</span>
+    </div>
+  </header>
+
+  {{ content }}
+
 </div>
