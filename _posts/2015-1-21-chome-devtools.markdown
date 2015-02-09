@@ -3,7 +3,7 @@ layout: event
 categories: event
 title: "Chrome DevTools Show-and-Tell"
 location: "@Western International University, Tempe"
-map: "http://bit.ly/1vUUPOr "
+map: "http://bit.ly/1vUUPOr"
 time: "6:00-8:30"
 presenter: "Show-and-tell (all members)"
 topic: "Chrome DevTools"
