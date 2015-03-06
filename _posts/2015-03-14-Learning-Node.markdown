@@ -1,7 +1,7 @@
 ---
 layout: event
 categories: event
-title: "Learning Node"
+title: "learning node"
 location: "@CEI, Phoenix"
 map: "http://bit.ly/1waCCTw "
 time: "7:00-8:30"
